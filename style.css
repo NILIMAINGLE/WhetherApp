@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  background-color: black;
+}
+
+.card {
+  width: 30vw;
+  margin: 100px auto;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  padding: 40px 35px;
+}
+
+.card__search-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card__search-container > input {
+  border: none;
+  outline: none;
+  padding: 13px 25px;
+  flex: 1;
+  border-radius: 30px;
+  font-size: 16px;
+  background: #ebfffc;
+}
+
+.card__search-container i {
+  background-color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(108, 108, 108);
+  background: #ebfffc;
+  cursor: pointer;
+}
+
+.error {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  color: white;
+  display: none;
+}
+
+.wheather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  display: none;
+}
+
+.whaeather__icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.whather__temp {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.whather__city {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.wheather__details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+}
+
+.col img {
+  width: 40px;
+}
+
+.humidity,
+.wind {
+  font-size: 30px;
+  margin-top: -6px;
+}
+
+@media (max-width: 1280px) {
+  .card {
+    width: 40vw;
+    margin: 50px auto;
+    padding-inline: 15px !important;
+  }
+  .card__search-container > input {
+    width: 40%;
+    padding: 1vw 3vw;
+    font-size: 16px;
+  }
+  .whather__temp {
+    font-size: 65px;
+  }
+
+  .whather__city {
+    font-size: 32px;
+    margin-top: -5px;
+  }
+
+  .wheather__details {
+    justify-content: center !important;
+    gap: 10vw;
+  }
+
+  .col img {
+    width: 45px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 22px;
+    margin-top: -3px;
+  }
+
+  .details__text {
+    font-size: 10px;
+  }
+  .wheather__icon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90vw;
+    margin: 50px auto;
+    padding-inline: 15px !important;
+  }
+  .card__search-container > input {
+    width: 40%;
+    padding: 4vw 4vw;
+    font-size: 14px;
+  }
+  .whather__temp {
+    font-size: 55px;
+  }
+
+  .whather__city {
+    font-size: 32px;
+    margin-top: -5px;
+  }
+
+  .wheather__details {
+    justify-content: center !important;
+    gap: 50px;
+  }
+
+  .col img {
+    width: 25px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 16px;
+    margin-top: -3px;
+  }
+
+  .details__text {
+    font-size: 10px;
+  }
+  .wheather__icon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 140px;
+  }
+}

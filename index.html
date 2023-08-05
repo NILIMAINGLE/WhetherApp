@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <div class="card__search-container">
+          <input
+            type="text"
+            placeholder="enter city name"
+            spellcheck="false"
+            id="city__Name"
+          />
+          <i class="fa-solid fa-magnifying-glass" id="search__btn"></i>
+        </div>
+        <div class="error">
+          <p>Enter Valid City Name</p>
+        </div>
+        <div class="wheather">
+          <img src="assets/clouds.png" alt="Clouds" class="wheather__icon" />
+          <h1 class="whather__temp">22°c</h1>
+          <h2 class="whather__city">Banlore</h2>
+          <div class="wheather__details">
+            <div class="col">
+              <img src="assets/humidity.png" alt="humidity" />
+              <div>
+                <p class="humidity">50%</p>
+                <p class="details__text">Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="assets/wind.png" alt="wind" />
+              <div>
+                <p class="wind">15 km/hr</p>
+                <p class="details__text">Wind Speend</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./gsap.js"></script>
+  </body>
+</html>
